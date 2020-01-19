@@ -6,7 +6,7 @@ int main(){
     int T; cin>>T;
     for(int t = 1; t <= T; t++){
         LL ax, ay, bx, by, cx, cy; cin>>ax>>ay>>bx>>by>>cx>>cy;
-        LL len = abs(ax-bx), width = abs(ay-by);/// length of lines
+        LL len = abs(ax-bx), width = abs(ay-by);/// distance in x and y axis between "a and b" coordinates.
         LL dx, dy;
         LL area = abs(ax*(by-cy) + bx*(cy-ay) + cx*(ay-by));
         (bx > ax) ? dx = cx - len : dx = cx + len;
